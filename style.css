@@ -1,0 +1,85 @@
+/* SETUP */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --nav-bg: #33292a;
+  --nav-color: #fff;
+  --bg-color-1: #33292a;
+  --bg-color-2: #644b4f;
+  --bg-color-3: #333333;
+  --bg-color-4: #f2f2f2;
+  --link-color: #efa69d;
+  --hover-color: #e9877b;
+  --breakpoint: 768px;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+/* NAVIGATION */
+
+.navigation {
+  background-color: var(--nav-bg);
+  font-weight: bold;
+  font-size: 1.25em;
+}
+.navigation a {
+  color: var(--nav-color);
+  text-decoration: none;
+}
+.navigation a:hover {
+  color: var(--hover-color);
+}
+.navigation-list {
+  display: flex;
+  justify-content: center;
+}
+.navigation-item {
+  list-style-type: none;
+  padding: 24px 36px;
+}
+
+@media (max-width: var(--breakpoint)) {
+  .navigation {
+  }
+  .navigation-list {
+  }
+  .navigation-item {
+  }
+}
+
+/* HERO */
+
+.hero {
+  background-image: url("./images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-container {
+  height: 500px;
+  position: relative;
+}
+.hero-text {
+  position: absolute;
+  right: 160px;
+  bottom: 40px;
+  color: var(--nav-color);
+  font-weight: bold;
+  font-size: 3em;
+  text-align: right;
+}
+@media (max-width: var(--breakpoint)) {
+  .hero {
+  }
+  .hero-container {
+  }
+  .hero-text {
+  }
+}
