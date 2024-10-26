@@ -373,6 +373,9 @@ body {
   .gallery-item {
     width: 100%;
   }
+  .gallery-item img {
+    display: block;
+  }
 }
 
 /* FOOTER */
